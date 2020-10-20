@@ -34,4 +34,8 @@ public class House {
     private void setRooms(int rooms) {
         this.rooms = rooms;
     }
+
+
+
+
 }
