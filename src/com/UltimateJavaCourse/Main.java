@@ -1,12 +1,29 @@
 package com.UltimateJavaCourse;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
+
+        ArrayList<House> houses = new ArrayList<>();
+
 	    // write your code here
         House house  = new House("Duplex", "1981 E 16th St", 5);
         House tenant = new Tenant1("Atoullo", "1981 E 16th St", 1, 550);
+        House tenant1 = new Tenant2("Azam", "1981 E 16th St", 2, 550);
+        House tenant2 = new Tenant3("Amin", "1981 E 16th St", 3, 550);
+        House tenant3 = new Tenant4("Khodzha", "1981 E 16th St", 4, 550);
 
-        System.out.println(tenant.getName());
+        houses.add(house);
+        houses.add(tenant);
+        houses.add(tenant1);
+        houses.add(tenant2);
+        houses.add(tenant3);
+
+        for (House h : houses) {
+            System.out.println(h.getName());
+        }
+
     }
 }
